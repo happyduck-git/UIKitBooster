@@ -10,7 +10,7 @@ import Combine
 
 // MARK: - Combine Publisher
 extension UIButton {
-    var tapPublisher: AnyPublisher<Void, Never> {
+    public var tapPublisher: AnyPublisher<Void, Never> {
         controlPublisher(for: .touchUpInside)
             .map { _ in }
             .eraseToAnyPublisher()
