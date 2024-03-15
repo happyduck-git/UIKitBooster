@@ -34,8 +34,8 @@ extension UIView {
 
 extension UIView {
     public func circleView() {
-        if self.frame.width.isEqual(to: self.frame.height) {
-            self.layer.cornerRadius = self.frame.width / 2
+        if self.bounds.width.isEqual(to: self.bounds.height) {
+            self.layer.cornerRadius = self.bounds.width / 2
         }
     }
 }
